@@ -1,0 +1,416 @@
+<html>
+
+<head>
+  <title>HEALTHCARE CHATBOT</title>
+  <link rel="shortcut icon" href="img/icon.ico">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" href="../static/favicon.ico">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../static/css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../static/css/icomoon.css">
+  <!-- Simple Line Icons -->
+  <link rel="stylesheet" href="../static/css/simple-line-icons.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="../static/css/style.css">
+
+
+  <!-- Modernizr JS -->
+  <script src="../static/js/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="../static/style.css">
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <div class="panel panel-default">
+    <div class="t1" align="center">
+      <spa>HEALTHCARE CHATBOT</span>
+    </div>
+
+  </div>
+
+  <!--start content area-->
+
+  <div class="row">
+    <div class="col-lg-3">
+
+      <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    </div>
+
+
+
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header d-flex align-items-center">
+          <h2 class="h5 display display">
+            <h2>Symptoms Information</h2>
+          </h2>
+        </div>
+        <div class="card-block">
+          <p></p>
+          <form name="form1" method="post" action="/Symptoms"> <label>Are you experiencing on</label>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>continuous_sneezing ? </label>
+
+
+                  <select name="sym1" id="sym1" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+
+                  </select>
+
+
+
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>fatigue ? </label>
+                  <select name="sym2" id="sym2" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>high_fever ? </label>
+                  <select name="sym3" id="sym3" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+
+                  </select>
+
+
+
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>muscle_pain ? </label>
+                  <select name="sym4" id="sym4" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>runny_nose ? </label>
+                  <select name="sym5" id="sym5" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+
+                  </select>
+
+
+
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> skin_rash ? </label>
+                  <select name="sym6" id="sym6" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> joint_pain ? </label>
+                  <select name="sym7" id="sym7" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+
+                  </select>
+
+
+
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> vomiting ? </label>
+                  <select name="sym8" id="sym8" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>back_pain ? </label>
+                  <select name="sym9" id="sym9" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+
+                  </select>
+
+
+
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> burning_micturition ? </label>
+                  <select name="sym10" id="sym10" class="form-control">
+
+                    <option value='yes'>Yes</option>
+                    <option value='no'>No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" name="btn" value="Submit" class="btn btn-primary">
+            </div>
+            {%if second_prediction%}
+
+
+
+            <div class="form-group">
+              <p align="left" class="msg">
+              <h4>You may have <b style="color:red"> {{ second_prediction }}</b></h4>
+              </p>
+
+              <p align="left" class="msg">
+              <h6>{{ description }}</h6>
+              </p>
+              <p align="left" class="msg">
+              <h6>Take following measures :</h6>
+              </p>
+              <p align="left" class="msg">1.) {{ FData1 }}</p>
+              <p align="left" class="msg">2.) {{ FData2 }}</p>
+              <p align="left" class="msg">3.) {{ FData3 }}</p>
+              <p align="left" class="msg">4.) {{ FData4 }}</p>
+              <p align="left" class="msg">
+              <h6>Doctor Name: <b style="color:red"> {{ Ddata1 }}</b></h6>
+              </p>
+
+              <a href="{{ Ddata2 }}">{{ Ddata2 }}</a>
+            </div>
+            {%endif%}
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en' },
+          'google_translate_element'
+        );
+      }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+<!--<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#000066
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h2{
+background-color:gray;
+}
+body{background:#0099FF}
+table {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 45%;
+}td, th {
+    border: 1px solid #0099FF;
+    text-align: left;
+    padding: 8px;
+}tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<title>highway roads</title>
+</head>
+
+<body align="center">
+{% if result %}
+   <p>{{result}}</p>
+{%endif%}
+ 
+<h1 align="center"> NEW USER REGISTER </h1>
+<form  name="form1" method="post" action="/user">
+<p><ul><li><a href="/">HOME</a></li>
+   <li><a href="/register">NEW USER REGISTER</a></li>
+   <li><a href="/login">YOUR LOGIN</a></li></ul>
+      </p>
+  <table width="441" height="405" border="0" align="center" bordercolor="blue">
+    <tr>
+      <td width="97">BANK HOLDER NAME </td>
+      <td width="239"><div align="center">
+        <input type="text" name="name" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>MOBILE NO </td>
+      <td><div align="center">
+        <input type="text" name="mobile" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>EMAIL ID </td>
+      <td><div align="center">
+        <input type="text" name="email" required/>
+      </div></td>
+    </tr>
+   <tr>
+      <td>ADDRESS</td>
+      <td><div align="center"><textarea name="address"></textarea>
+	  </div></td>
+    </tr>
+    <tr>
+      <td>BANK NAME </td>
+      <td><div align="center"><select name="bank">
+	  <option value="">-BANK-</option>
+	  <option value="SBI">-SBI-</option>
+	  <option value="IOB">-IOB-</option>
+	  <option value="CANARA">-CANARA-</option>
+	  <option value="INDIAN BANK">-INDIAN BANK-</option>
+	  <option value="ICICI">-ICICI-</option>
+	  <option value="HDFCI">-HDFCI-</option>
+	  <option value="LVB">-LVB-</option>
+	  <option value="BOI">-BOI-</option>
+      </select>
+      </div></td>
+    </tr>
+	<tr>
+      <td>ACCOUNT NO</td>
+      <td><div align="center">
+        <input type="text" name="accno" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>BRANCH</td>
+      <td><div align="center">
+        <input type="text" name="branch" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>USERNAME</td>
+      <td><div align="center">
+        <input type="text" name="username" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>PASSWORD</td>
+      <td><div align="center">
+        <input type="password" name="password"  maxlength="4" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td><div align="center">
+        <input type="date" name="rdate"   required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td> <div align="center">
+        <input type="reset" name="btn1" value="RESET" />
+      </div></td>
+      <td><div align="center">
+        <input type="submit" name="btn" value="SUBMIT" />
+      </div></td>
+    </tr>
+  </table>
+ 
+</form>
+</body>
+</html>-->
